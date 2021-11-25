@@ -1,8 +1,3 @@
-const { baseConfig, nextConfig } = require('./lib/configs');
+const eslintrc = require('./.eslintrc.js');
 
-module.exports = {
-  configs : {
-    base : baseConfig,
-    next : nextConfig
-  }
-};
+module.exports = eslintrc;

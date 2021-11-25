@@ -1,0 +1,49 @@
+{
+  "name": "@reflektor/eslint-config-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "ESLint configuration for React projects at Reflektor",
+  "keywords": [
+    "reflektor",
+    "reflektor digital",
+    "eslint",
+    "eslint config",
+    "nextjs",
+    "react",
+    "best practices"
+  ],
+  "author": "Reflektor Digital Inc.",
+  "contributors": [
+    {
+      "name": "William To",
+      "url": "https://github.com/wlto"
+    }
+  ],
+  "license": "MIT",
+  "repository": "git@github.com:reflektor-digital-inc/eslint-config-react.git",
+  "bugs": {
+    "url": "https://github.com/reflektor-digital-inc/eslint-config-react/issues"
+  },
+  "homepage": "https://github.com/reflektor-digital-inc/eslint-config-react#readme",
+  "scripts": {
+    "test": "eslint . -c ./.eslintrc.js",
+    "prepare": "husky install",
+    "pre-commit": "echo \"Running Husky 🐶\n\" && lint-staged"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "eslint": "^8.3.0",
+    "eslint-config-next": "^12.0.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ]
+  }
+}

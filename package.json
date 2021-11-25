@@ -28,7 +28,7 @@
   "scripts": {
     "test": "eslint . -c ./.eslintrc.js",
     "prepare": "husky install",
-    "pre-commit": "echo \"Running Husky 🐶\n\" && lint-staged"
+    "pre-commit": "echo \"\nRunning Husky 🐶\n\" && lint-staged"
   },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",

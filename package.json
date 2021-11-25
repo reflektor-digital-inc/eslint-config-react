@@ -1,6 +1,6 @@
 {
   "name": "@reflektor/eslint-config-react",
-  "version": "1.0.1-alpha",
+  "version": "1.0.2-alpha",
   "main": "index.js",
   "description": "ESLint configuration for React projects at Reflektor",
   "keywords": [

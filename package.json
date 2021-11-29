@@ -25,9 +25,13 @@
     "url": "https://github.com/reflektor-digital-inc/eslint-config-react/issues"
   },
   "homepage": "https://github.com/reflektor-digital-inc/eslint-config-react#readme",
+  "engines": {
+    "yarn": ">=1.22"
+  },
   "scripts": {
     "test": "eslint . -c ./.eslintrc.js",
     "prepare": "husky install",
+    "preinstall" : "node scripts/preinstall",
     "pre-commit": "echo \"\nRunning Husky 🐶\n\" && lint-staged"
   },
   "peerDependencies": {

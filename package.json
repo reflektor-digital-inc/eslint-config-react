@@ -2,7 +2,7 @@
   "name": "@reflektor/eslint-config-react",
   "version": "1.0.3",
   "main": "index.js",
-  "description": "ESLint configuration for React projects at Reflektor",
+  "description": "ESLint configuration for React projects at Reflektor Digital.",
   "keywords": [
     "reflektor",
     "reflektor digital",
@@ -31,28 +31,24 @@
   "scripts": {
     "test": "eslint . -c ./.eslintrc.js",
     "prepare": "husky install",
-    "preinstall" : "node scripts/preinstall",
+    "preinstall": "node scripts/preinstall",
     "pre-commit": "echo \"\nRunning Husky 🐶\n\" && lint-staged"
-  },
-  "peerDependencies": {
-    "eslint": "^8.3.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^4.3.0"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^15.0.0",
-    "@commitlint/config-conventional": "^15.0.0",
-    "eslint": "^8.3.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.1.2"
   },
   "lint-staged": {
     "*.js": [
       "eslint --fix"
     ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "eslint": "^8.3.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2"
   }
 }

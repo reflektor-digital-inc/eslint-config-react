@@ -106,24 +106,18 @@ module.exports = {
     'import/no-duplicates'        : 'error',
     'import/first'                : 'error',
     'import/newline-after-import' : ['error', { 'count' : 1 }],
-
-    /**
-     * [william - 2021-12-17]
-     * This rule is not working in this repo
-     * temporarily disabled for now
-     */
-    // 'import/order'                : [
-    //   'error', {
-    //     'groups' : [
-    //       ['builtin', 'external'],
-    //       ['internal'],
-    //       ['unknown'],
-    //       ['parent', 'sibling'],
-    //       'index'
-    //     ],
-    //     'newlines-between' : 'never'
-    //   }
-    // ],
+    'import/order'                : [
+      'error', {
+        'groups' : [
+          ['builtin', 'external'],
+          ['internal'],
+          ['unknown'],
+          ['parent', 'sibling'],
+          'index'
+        ],
+        'newlines-between' : 'never'
+      }
+    ],
     'import/default' : 'warn',
 
     /*

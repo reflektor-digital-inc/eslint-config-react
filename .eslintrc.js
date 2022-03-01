@@ -65,13 +65,7 @@ module.exports = {
     /*
      * SPACING
      */
-    'object-curly-spacing' : ['error', 'always'],
-    'object-curly-newline' : ['error', {
-      'ObjectExpression'  : { 'multiline' : true, 'minProperties' : 5 },
-      'ObjectPattern'     : { 'multiline' : true, 'minProperties' : 5 },
-      'ImportDeclaration' : 'never',
-      'ExportDeclaration' : 'never'
-    }],
+    'object-curly-spacing'    : ['error', 'always'],
     'object-property-newline' : ['error', { 'allowAllPropertiesOnSameLine' : true }],
     'array-bracket-spacing'   : ['error', 'never'],
     'comma-spacing'           : ['error', { 'after' : true }],
@@ -147,11 +141,12 @@ module.exports = {
     'react/react-in-jsx-scope' : 0
   },
   settings : {
-    'react'           : { version : 'detect' },
     'import/resolver' : {
+      'node' : {
+        'extensions' : ['.js', '.jsx']
+      },
       'alias' : {
         'map' : [
-          ['@', './src'],
           ['@/*', './src/*']
         ]
       }

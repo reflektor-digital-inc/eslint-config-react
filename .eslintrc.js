@@ -138,7 +138,44 @@ module.exports = {
       2,
       { 'beforeSelfClosing' : 'always' }
     ],
-    'react/react-in-jsx-scope' : 0
+    'react/react-in-jsx-scope' : 0,
+
+    // for react three fiber
+    // https://github.com/jsx-eslint/eslint-plugin-react/issues/3423
+    'react/no-unknown-property' : [1, {
+      ignore : [
+        'geometry',
+        'material',
+        'attach',
+        'args',
+        'onUpdate',
+        'position',
+        'up',
+        'scale',
+        'rotation',
+        'rotation',
+        'matrix',
+        'quaternion',
+        'layers',
+        'dispose',
+        'object',
+        'near',
+        'far',
+        'color',
+        'density',
+        'fov',
+        'intensity',
+        'angle',
+        'penumbra',
+        'decay',
+        'target',
+        'userData',
+        'frustumCulled',
+        'renderOrder',
+        'encoding',
+        'visible'
+      ]
+    }]
   },
   settings : {
     'import/resolver' : {
